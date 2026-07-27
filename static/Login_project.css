@@ -1,0 +1,91 @@
+:root{
+  background: linear-gradient(to bottom right , blue,pink);
+  background-repeat: no-repeat;
+  height: 100%;
+}
+p, h2 , input{
+  font-family: Times New Roman;
+}
+.container{
+  background: white;
+  width: 80%;
+  margin:100px auto;
+  padding: 25px;
+  border-radius: 10px;
+  height:22rem ;
+}
+input{
+  border: none;
+  border-bottom:2px solid gray ;
+  outline: none;
+  margin: auto;
+  height: 30px;
+  margin: 10px 0px;
+  width:100%;
+}
+input:focus{
+  border-bottom: 2px solid blue;
+  transform: translate(0px,2px);
+  transition: transform 0s linear;
+}
+h2,.container>p{
+  text-align: center;
+}
+form a:link{
+  text-decoration: none;
+  color:gray;
+}
+button{
+  width: 100%;
+  margin: 0px auto;
+  height: 50px;
+  border-radius:50px ;
+  font-weight: bold;
+  font-family: s ;
+  margin:10px 0px 15px;
+}
+button:hover{
+  transform: scale(.9);
+  border: 2px solid blue;
+  transition: transform 0s linear;
+}
+.container>p{
+  margin-bottom:5px;
+}
+#signup_link>a:link, #signup_link>a:visited{
+  text-decoration: none;
+  color: rgb(0,0,255);
+}
+form a:visited {
+  color: gray;
+}
+.container>p{
+  color: gray;
+}
+
+@media screen and (min-width:800px) {
+  .container{
+   width: 50vw;
+   margin:5vw auto;
+   height:45vw ;
+   border-radius:3vw ;
+  }
+  input{
+   margin: 0 auto;
+   height: 5vw;
+   margin: 10px 0px;
+   font-size: 2vw;
+}
+  button{
+   height: 7vw;
+   border-radius:80px ;
+   margin:10px 0px 15px;
+   font-size: 2vw;
+  }
+  p{
+    font-size: 2vw;
+  }
+  h2{
+    font-size: 3vw;
+  }
+}

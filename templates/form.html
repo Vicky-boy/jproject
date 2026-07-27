@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>this is my simple form project</title>
+    </head>
+    <body>
+        <form action="http://127.0.0.1:8000/myapp/words/" method="POST">
+            {%csrf_token%}
+            <textarea name="text" id="" cols="50" rows="20"></textarea><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>

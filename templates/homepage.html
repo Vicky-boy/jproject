@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
   <head>
     <title>movie website home page</title>
     <meta charset="UTF-8"/>
     <meta name="viewport"  content="width=device-width initial-scale=1.0"/>
-    <link rel="stylesheet" type="text/css" href="./homepage.css"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'homepage.css' %}"/>
   </head>
   <body>
     <div class="top_navigation">
@@ -38,10 +39,10 @@
     </div>
     <main>
       <div class="global_container" >
-        <div class="content1"><a href="#"><img src="Images/cyber_souls.jpg" alt="cyber souls"/></a></div>
-        <div class="content2"><a href="#"><img src="images/void_walker.jpg" alt="void walker"/></a></div>
-        <div class="content3"><a href="#"><img src="images/mystic_acts.jpg" alt="mystic acts"/></a></div>
-        <div class="content4"><a href="#"><img src="images/Crimson_comet.jpg" alt="crimson comet"/></a></div>
+        <div class="content1"><a href="#"><img src="{%static 'cyber_souls.jpg' %}" alt="cyber souls"/></a></div>
+        <div class="content2"><a href="#"><img src="{%static 'void_walker.jpg' %}" alt="void walker"/></a></div>
+        <div class="content3"><a href="#"><img src="{%static 'mystic_acts.jpg' %}" alt="mystic acts"/></a></div>
+        <div class="content4"><a href="#"><img src="{%static 'Crimson_comet.jpg' %}" alt="crimson comet"/></a></div>
       </div>
     </main>
   </body>
